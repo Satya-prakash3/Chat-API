@@ -5,6 +5,7 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [minusCount, setMinusCount] = useState(0)
 
   return (
     <>
@@ -20,6 +21,9 @@ function App() {
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
+        </button>
+        <button onClick={() => setMinusCount((minusCount) => minusCount - 1)}>
+          count is {minusCount}
         </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR

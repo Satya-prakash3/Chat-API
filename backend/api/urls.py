@@ -1,6 +1,12 @@
-from django.urls import path
-from .views.views import *
+from django.urls import (
+    path,
+    re_path
+)
+
+from api.views import (
+    Root
+)
 
 urlpatterns = [
-    path("", root.as_view(), name="ChatAPI"),
+    path("", Root.as_view(), name="Root View")
 ]
